@@ -1,7 +1,7 @@
 output "service" {
-    value = kubernetes_service.this
+  value = kubernetes_service.this
 }
 
 output "deployment" {
-    value = kubernetes_deployment.this
+  value = kubernetes_deployment.this
 }
