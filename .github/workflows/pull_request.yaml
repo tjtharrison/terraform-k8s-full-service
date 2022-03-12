@@ -18,10 +18,10 @@ jobs:
         output-method: inject
         git-push: "true"
 
-      - name: terraform fmt
-        uses: dflook/terraform-fmt@v1
-        with:
-          path: .
+    - name: terraform fmt
+      uses: dflook/terraform-fmt@v1
+      with:
+        path: .
 
     - uses: actions/labeler@v4
       with:
