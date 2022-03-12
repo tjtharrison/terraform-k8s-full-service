@@ -1,4 +1,4 @@
-name: Generate terraform docs
+name: Format pull request
 on:
   - pull_request
 
@@ -17,6 +17,11 @@ jobs:
         output-file: README.md
         output-method: inject
         git-push: "true"
+
+      - name: terraform fmt
+        uses: dflook/terraform-fmt@v1
+        with:
+          path: .
 
     - uses: actions/labeler@v4
       with:
