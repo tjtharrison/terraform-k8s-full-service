@@ -1,7 +1,3 @@
-# terraform-k8s-full-service
-Fully redundant kubernetes service module
-
-<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 No requirements.
@@ -41,8 +37,4 @@ No modules.
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_deployment"></a> [deployment](#output\_deployment) | n/a |
-| <a name="output_service"></a> [service](#output\_service) | n/a |
-<!-- END_TF_DOCS -->
+No outputs.
