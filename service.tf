@@ -13,6 +13,6 @@ resource "kubernetes_service" "this" {
       target_port = var.app_port
     }
 
-    type = var.service_type
+     type = var.service_type
   }
 }
