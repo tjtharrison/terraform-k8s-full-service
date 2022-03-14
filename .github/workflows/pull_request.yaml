@@ -29,11 +29,6 @@ jobs:
     - uses: actions/labeler@v4
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
-
-    # - run: |
-    #     chmod -R ugo+rwX *.tf
-    #     chmod -R ugo+rwX *.md
-
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Labelled and updated docs
