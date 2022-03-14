@@ -30,6 +30,9 @@ jobs:
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
 
+    - run: |
+      chmod -R ugo+rwX .
+
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Labelled and updated docs
