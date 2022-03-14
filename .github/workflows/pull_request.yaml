@@ -2,6 +2,9 @@ name: Format pull request
 on:
   - pull_request
 
+env:
+  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
 jobs:
   docs:
     runs-on: ubuntu-latest
