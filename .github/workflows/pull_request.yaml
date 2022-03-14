@@ -16,14 +16,7 @@ jobs:
     - name: Get Actions user id
       id: get_uid
       run: |
-        actions_user_id=`id -u $USER`
-        echo $actions_user_id
-        echo ::set-output name=uid::$actions_user_id
-
-    - name: Correct Ownership in GITHUB_WORKSPACE directory
-      uses: peter-murray/reset-workspace-ownership-action@v1
-      with:
-        user_id: ${{ steps.get_uid.outputs.uid }}
+        chmod -R 777 .
 
     - name: Render terraform docs and push changes back to PR
       uses: terraform-docs/gh-actions@main
