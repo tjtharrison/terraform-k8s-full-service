@@ -32,4 +32,4 @@ jobs:
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Labelled and updated docs
-        file_pattern: *.tf *.md
+        file_pattern: "*.tf *.md"
