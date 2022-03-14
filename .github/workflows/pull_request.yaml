@@ -28,7 +28,7 @@ jobs:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
 
     - run: |
-        chmod -R g+rwX .git/
+        sudo chmod -R g+rwX .git/
 
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
