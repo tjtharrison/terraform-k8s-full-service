@@ -16,7 +16,7 @@ jobs:
         working-dir: .
         output-file: README.md
         output-method: inject
-        git-push: "false"
+        git-push: "true"
 
     - name: terraform fmt
       uses: dflook/terraform-fmt@v1
@@ -26,6 +26,9 @@ jobs:
     - uses: actions/labeler@v4
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
+
+    - run: |
+        chmod -R g+rwX .git/
 
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
