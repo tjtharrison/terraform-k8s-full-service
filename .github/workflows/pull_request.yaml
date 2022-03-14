@@ -13,9 +13,7 @@ jobs:
       with:
         ref: ${{ github.event.pull_request.head.ref }}
 
-    - name: Get Actions user id
-      id: get_uid
-      run: |
+    - run: |
         chmod -R 777 .
 
     - name: Render terraform docs and push changes back to PR
